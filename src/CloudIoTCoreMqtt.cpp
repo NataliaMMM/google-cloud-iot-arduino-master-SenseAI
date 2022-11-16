@@ -40,6 +40,7 @@ boolean CloudIoTCoreMqtt::loop() {
   return this->mqttClient->loop();
 }
 
+/*
 void CloudIoTCoreMqtt::mqttConnect(bool skip) {
   Serial.println("Connecting to Cloud IoT Core MQTT..."); //Modificada NMM
   bool keepgoing = true;
@@ -99,6 +100,7 @@ void CloudIoTCoreMqtt::mqttConnect(bool skip) {
 
   onConnect();
 }
+*/
 
 void CloudIoTCoreMqtt::mqttConnectAsync(bool skip) {
   Serial.println("Connecting...");
